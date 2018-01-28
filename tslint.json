@@ -1,0 +1,66 @@
+{
+    "extends": [
+        "tslint:recommended",
+        "tslint-config-prettier"
+    ],
+    "rules": {
+        "cyclomatic-complexity": [
+            true
+        ],
+        "member-ordering": [
+            true,
+            {
+                "order": [
+                    "public-static-field",
+                    "protected-static-field",
+                    "private-static-field",
+                    "instance-field",
+                    "public-constructor",
+                    "protected-constructor",
+                    "private-constructor",
+                    "protected-instance-method",
+                    "private-instance-method"
+                ]
+            }
+        ],
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "allow-leading-underscore"
+        ],
+        "max-classes-per-file": false,
+        "no-console": false,
+        "no-empty": false,
+        "no-empty-interface": false,
+        "no-var-requires": false,
+        "no-shadowed-variable": false,
+        "no-magic-numbers": [
+            true,
+            -1,
+            0,
+            1,
+            2
+        ],
+        "no-unused-expression": false,
+        "prefer-method-signature": true,
+        "one-line": [
+            true,
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            }
+        ],
+        "no-null-keyword": true,
+        "switch-default": true,
+        "object-literal-sort-keys": false,
+        "interface-name": false
+    }
+}
