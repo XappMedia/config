@@ -1,6 +1,6 @@
 {
   "name": "@xapp/config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Shared configuration parameters for TypeScript development",
   "repository": {
     "type": "git",
