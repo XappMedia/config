@@ -2,9 +2,10 @@
   "name": "@xapp/config",
   "version": "0.0.1",
   "description": "Shared configuration parameters for TypeScript development",
+  "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/XappMedia/config.git"
+    "url": "https://github.com/XAPPmedia/config.git"
   },
   "scripts": {
     "lint": "tslint -e '**/*.d.ts' '{src,test}/**/*.{ts,tsx}'",
@@ -13,7 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "tslint": "5",
     "typescript": "2",
