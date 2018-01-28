@@ -1,11 +1,15 @@
 {
   "name": "@xapp/config",
-  "version": "1.0.0",
-  "description": "Shared configuration parameters",
-  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Shared configuration parameters for TypeScript development",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XappMedia/config.git"
+  },
   "scripts": {
     "lint": "tslint -e '**/*.d.ts' '{src,test}/**/*.{ts,tsx}'",
     "prettier": "prettier --config --write ./prettier.config.js '{src,test}/**/*.{ts,tsx}'",
+    "release": "standard-version",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -19,8 +23,9 @@
     "tslint-config-prettier": "1.6.0"
   },
   "devDependencies": {
+    "prettier": "1",
+    "standard-version": "4.3.0",
     "tslint": "5",
-    "typescript": "2",
-    "prettier": "1"
+    "typescript": "2"
   }
 }
