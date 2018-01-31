@@ -28,7 +28,11 @@
             "ban-keywords",
             "allow-leading-underscore"
         ],
+        "array-type": false,
+        "arrow-return-shorthand": false,
         "max-classes-per-file": false,
+        "no-angle-bracket-type-assertion": false,
+        "member-access": false,
         "no-console": false,
         "no-empty": false,
         "no-empty-interface": false,
