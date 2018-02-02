@@ -35,6 +35,18 @@ npm install --save-dev @xapp/config
 }
 ```
 
+To override a rule locally, simply negate the rule in your config.  For example to override "member-access":
+```json
+{
+    "extends": [
+        "@xapp/config/tslint"
+    ],
+    "rules": {
+    "member-access": true
+    }
+}
+```
+
 ### prettier.config.js
 
 ```javascript
