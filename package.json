@@ -17,7 +17,7 @@
   "license": "MIT",
   "peerDependencies": {
     "tslint": "5",
-    "typescript": "2",
+    "typescript": "3",
     "prettier": "1"
   },
   "dependencies": {
