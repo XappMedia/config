@@ -65,6 +65,11 @@
         "no-null-keyword": true,
         "switch-default": true,
         "object-literal-sort-keys": false,
-        "interface-name": false
+        "interface-name": false,
+        "semicolon": [
+            true,
+            "always",
+            "ignore-interfaces"
+        ]
     }
 }
