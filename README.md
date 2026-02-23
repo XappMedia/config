@@ -3,7 +3,7 @@
 ## Installation
 
 ```sh
-npm install --save-dev @xapp/config eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin typescript prettier
+npm install --save-dev @xapp/config eslint typescript prettier
 ```
 
 ## Usage

@@ -45,3 +45,4 @@ Test files (`*.test.ts`, `*.spec.ts`) have additional relaxed rules.
 
 - Tab width: 4 spaces
 - Print width: 120 characters
+- Parser: auto-detected by file extension
