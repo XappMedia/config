@@ -3,7 +3,7 @@
 ## Installation
 
 ```sh
-npm install --save-dev @xapp/config
+npm install --save-dev @xapp/config eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin typescript prettier
 ```
 
 ## Usage
@@ -24,27 +24,29 @@ npm install --save-dev @xapp/config
 }
 ```
 
-### tslint.json
+### eslint.config.js
 
-```json
-{
-    "extends": [
-        "@xapp/config/tslint"
-    ],
-    "rules": {}
-}
+```javascript
+const xappConfig = require("@xapp/config/eslint.config");
+
+module.exports = [
+    ...xappConfig,
+    // Add your custom rules here
+];
 ```
 
-To override a rule locally, simply negate the rule in your config.  For example to override "member-access":
-```json
-{
-    "extends": [
-        "@xapp/config/tslint"
-    ],
-    "rules": {
-    "member-access": true
+To override a rule locally, add a configuration object with the rule:
+```javascript
+const xappConfig = require("@xapp/config/eslint.config");
+
+module.exports = [
+    ...xappConfig,
+    {
+        rules: {
+            "@typescript-eslint/explicit-member-accessibility": "error"
+        }
     }
-}
+];
 ```
 
 ### prettier.config.js

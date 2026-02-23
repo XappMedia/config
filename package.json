@@ -8,25 +8,31 @@
     "url": "https://github.com/XAPPmedia/config.git"
   },
   "scripts": {
-    "lint": "tslint -e '**/*.d.ts' '{src,test}/**/*.{ts,tsx}'",
-    "prettier": "prettier --config --write ./prettier.config.js '{src,test}/**/*.{ts,tsx}'",
+    "lint": "eslint '{src,test}/**/*.{ts,tsx}'",
+    "prettier": "prettier --write '{src,test}/**/*.{ts,tsx}'",
     "release": "standard-version",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",
   "peerDependencies": {
-    "tslint": "5",
-    "typescript": "3",
-    "prettier": "1"
+    "@typescript-eslint/eslint-plugin": ">=8.0.0",
+    "@typescript-eslint/parser": ">=8.0.0",
+    "eslint": ">=8.57.0",
+    "prettier": ">=3.0.0",
+    "typescript": ">=5.0.0"
   },
   "dependencies": {
-    "tslint-config-prettier": "1.6.0"
+    "eslint-config-prettier": "^10.0.0"
   },
   "devDependencies": {
-    "prettier": "1",
-    "standard-version": "9.5.0",
-    "tslint": "5",
-    "typescript": "2"
+    "@eslint/js": "9.39.3",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "8.56.1"
   }
 }
